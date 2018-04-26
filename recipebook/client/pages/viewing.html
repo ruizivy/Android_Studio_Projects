@@ -1,0 +1,94 @@
+<template name="viewing">
+  
+<div class="col-12 col-md-3 col-xl-2 bd-sidebar container-fluid" id="sidenav" style="height:100%;background: rgba(104, 148, 180, 0.7)!important;">
+		<h4 class="card-title" style="color: white; font-family: Century Gothic; font-weight: bold;font-size: 20px">ALL DISHES</h4>
+	<br />
+			<ul id="ulsidenav" style="color: white;font-family: Century Gothic;font-size: 15px;list-style-type:none;line-height: 2em">
+						<li style="padding:10px" ><a href="" style="color: white;">Appetizers and Snacks</a></li>
+						<li style="padding:10px"><a href="" style="color: white;" id="asoup">Soups</a></li>
+						<li style="padding:10px"><a href="" style="color: white;">Salads</a></li>
+						<li style="padding:10px"><a href="" style="color: white;">Pastas</a></li>
+						<li style="padding:10px"><a href="" style="color: white;">Main Dishes</a></li>
+						<li style="padding:10px"><a href="" style="color: white;">Desserts</a></li>
+						<li style="padding:10px"><a href="" style="color: white;">Beverages</a></li>
+						<li style="padding:10px"><a href="" style="color: white;">Sauces and Dips</a></li>
+    	</ul>
+
+  </div>
+    <div class="container col-12 col-md-9 col-xl-10" style="height:auto; background: rgba(259, 253, 225, 1)!important;padding:10px z">
+        <br /><br />
+        <div class="container-fluid  form-row">
+            <div class="form-group col-md-6">
+                <div class="col-12 col-md-9 col-xl-10" style="height:auto; background: rgba(259, 253, 225, 1)!important;padding:10px z">
+                    <ul class="list-inline">
+                        <li class="list-inline-item col-lg-4" style="padding:10px">
+                            <div class="card" style="width:20em; height:100%; background-color: aliceblue; border-radius: 10px; padding:10px;font-family: Century Gothic;font-size: 15px;text-decoration-style: none">
+                                <img class="card-img-top" src="images/cupcake.jpg" alt="Card image cap" style="width:100% ; height: 100%;border-radius:10px">
+                               
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <br> <br> <br> <br>
+            <div class="container-fluid panel-group" style="color: black;font-family: Century Gothic;font-size: 15px;line-height: 2em; font-weight: bold;">
+                <div class="panel panel-default" style="font-weight:bold; background: rgba(205, 202, 202, 1)">
+                    Recipe Name: 
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid panel-group" style="color: black;font-family: Century Gothic;font-size: 15px;line-height: 2em; font-weight: bold;">
+            <div class="panel panel-default">
+                <div class="panel-body" style="font-weight:bold; background: rgba(205, 202, 202, 1)">Description</div>
+            </div>
+            <div class="panel panel-default" style="color:black">
+                <div class="panel-body container-fluid">
+                    <!--{{#each get_data}}
+			<li class="list-group-item clearfix"> {{procedure}} 
+			
+		     {{/each}}-->
+                </div>
+            </div>
+        </div>
+        <br /> <br />
+        <div class="container-fluid panel-group" style="color: black;font-family: Century Gothic;font-size: 15px;line-height: 2em; font-weight: bold;">
+            <div class="panel panel-default">
+                <div class="panel-body" style="font-weight:bold; background: rgba(205, 202, 202, 1)">Ingredients</div>
+            </div>
+            <div class="panel panel-default" style="color:black;">
+                <div class="panel-body container-fluid">
+                    <!--{{#each get_data}}
+			<li class="list-group-item clearfix"> {{ingredients}}
+			
+		     {{/each}}-->
+                </div>
+            </div>
+        </div>
+        <br /><br />
+        <div class="container-fluid panel-group" style="color: black;font-family: Century Gothic;font-size: 15px;line-height: 2em; font-weight: bold;">
+            <div class="panel panel-default">
+                <div class="panel-body" style="font-weight:bold; background: rgba(205, 202, 202, 1)">Procedure</div>
+            </div>
+            <div class="panel panel-default" style="color:black">
+                <div class="panel-body container-fluid">
+                    <!--{{#each get_data}}
+			<li class="list-group-item clearfix"> {{procedure}} 
+			
+		     {{/each}}-->
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container-fluid panel-body">
+            <button id="btnEditRecipe" class="btn btn-secondary form-group col-md-2" style="background: rgba(205, 202, 202, 1)">
+                   <span class="glyphicon glyphicon-edit" style="margin-right:10px;" align = "center"></span> EDIT
+                    </button>
+            <button id="btnSave" class="btn btn-warning form-group col-md-2">
+                   <span class="glyphicon glyphicon-save" style="margin-right:10px;" align = "center"></span> SAVE
+                    </button>
+        </div>
+    </div>
+
+</template>

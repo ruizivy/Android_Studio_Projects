@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ruiz.assignment4.SearchActivity">
+
+    <TextView
+        android:layout_marginTop="20px"
+        android:id="@+id/txthead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30px"
+        android:gravity="center"
+        android:layout_marginBottom="10px"
+        android:text="REGISTER"
+        />
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/txthead"
+        android:layout_margin="20px">
+
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25px"
+            android:layout_marginBottom="50px"
+            android:hint="Enter your name"/>
+        <EditText
+            android:id="@+id/txtuname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25px"
+            android:layout_marginBottom="10px"
+            android:hint="Username"/>
+        <EditText
+            android:id="@+id/txtpword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25px"
+            android:layout_marginBottom="10px"
+            android:hint="Password"/>
+
+        <EditText
+            android:id="@+id/txtconfirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25px"
+            android:layout_marginBottom="10px"
+            android:hint="CONFIRM PASSWORD"/>
+        <LinearLayout
+            android:layout_below="@+id/txtpword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="250px"
+                android:layout_height="wrap_content"
+                android:layout_margin="20px"
+                android:layout_marginRight="20px"
+                android:background="#1742bc"
+                android:text="REGISTER"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="250px"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnOK"
+                android:layout_margin="20px"
+                android:layout_marginLeft="20px"
+                android:background="#047ee6"
+                android:text="CANCEL"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

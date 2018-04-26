@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ruiz.messagingapp.SecondActivity">
+
+    <LinearLayout
+        android:id="@+id/pnlheader1"
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="#254ec3"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txt_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35px"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:layout_marginLeft="20sp"
+            android:textColor="#FFFF"
+            android:text="Number"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_below="@+id/pnlheader1"
+        android:id="@+id/lstfrom"
+        android:layout_width="fill_parent"
+        android:layout_height="950px"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <EditText
+            android:id="@+id/txt_message"
+            android:layout_width="620px"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:background="@android:drawable/alert_light_frame"
+            android:lines="2"
+            android:ellipsize="end"
+            android:layout_marginLeft="10px"
+            android:hint="Enter your message"
+            android:textStyle="italic"
+           />
+        <Button
+            android:layout_marginLeft="10px"
+            android:id="@+id/btnsend"
+            android:layout_width="70px"
+            android:layout_height="50px"
+            android:background="@mipmap/send"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

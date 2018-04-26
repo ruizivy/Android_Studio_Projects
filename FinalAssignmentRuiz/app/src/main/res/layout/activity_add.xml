@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ruiz.assignment4.AddActivity">
+    <LinearLayout
+        android:layout_margin="20px"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/txtplacename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25px"
+            android:layout_marginBottom="10px"
+            android:hint="Enter Place Name"/>
+
+        <TextView
+            android:textSize="25px"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:text="Type"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/selectspinner"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"></Spinner>
+
+        <TextView
+            android:textSize="25px"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:text="Address:"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/txtaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25px"
+            android:layout_marginBottom="10px"
+            android:hint="Enter address"/>
+        <RatingBar
+            android:id="@+id/RateBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:textStyle="italic"
+            android:fontFamily="casual"
+            android:layout_margin="20px"
+            />
+        <Button
+            android:id="@+id/register"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="SAVE"
+            android:layout_margin="20px"
+            android:textColor="#fff"
+            android:background="#1fb4b9"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

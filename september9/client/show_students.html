@@ -1,0 +1,32 @@
+<template name= "showStudents">
+	<table class="table table-striped table-hover ">
+		<thead>
+    	<tr>
+      		<th>ID</th>
+      		<th>Fullname</th>
+      		<th>Course</th>
+      		<th>Address</th>
+      		<th>Selection</th>
+    	</tr>
+  		</thead>
+  		<tbody>
+		{{#each students}}<tr>
+			<td>{{_id}} </td>
+			<td>{{Fullname}}</td>
+			<td>{{Course}}</td>
+			<td>{{Address}}</td>
+			<td><input type="button" class="btn btn-primary" value="Show Details" id="btnShowDetails"></td>
+		</tr>{{/each}}
+		</tbody>
+	</table>
+	{{#if currentUser}}
+	<input type = "button" class= "btn btn-primary" value ="Add New" id="btnAdd">
+	{{/if}}
+</template>
+
+<template name = "loggedIn">
+	<h1>I am logged in</h1>
+</template>
+<template name = "notLoggedIn">
+	<h1>I am not logged in</h1>
+</template>

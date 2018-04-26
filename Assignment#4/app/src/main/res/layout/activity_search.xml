@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ruiz.assignment4.SearchActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20px"
+        android:layout_marginRight="20px"
+        android:layout_marginTop="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/txtID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25px"
+            android:layout_marginBottom="10px"
+            android:hint="Type id here"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnOK"
+                android:layout_width="250px"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtID"
+                android:layout_margin="20px"
+                android:layout_marginRight="20px"
+                android:background="#1742bc"
+                android:text="OK"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="250px"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnOK"
+                android:layout_margin="20px"
+                android:layout_marginLeft="20px"
+                android:background="#047ee6"
+                android:text="CANCEL"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

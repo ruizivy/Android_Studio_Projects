@@ -1,0 +1,32 @@
+<template name="home">
+
+  <div class="d-nn d-xl-block bd-toc" style="height:auto;width:100%;padding:100px;color:#fff">
+
+    <h4 style="text-align: center">
+      <center>
+        <h1> <b>Creamy Recipes </b></h1>
+      </center>
+      Right at your fingertips are full, rich, step-by-step guides on how to help take your loved ones to high levels of heavenly
+      yum. Looking for sweet or savory dishes? Try these recipes with NESTLÉ Cream!
+    </h4>
+  </div>
+
+  <div>
+    <div class="col-12 col-md-12 col-xl-12"  style="height:auto; background: rgba(259, 253, 225, 1)!important;padding:10px">
+     <center>
+       <h1 > Category</h1>
+      <ul class="list-inline">
+        {{#each category_name}}
+        <li class="list-inline-item col-lg-4" style="padding:10px">
+          <div class="card" style="width:20em; height:100%; background-image: url ('images/dog.png');background-size: cover; padding:10px;font-family: Century Gothic;font-size: 15px;text-decoration-style: none">
+            <div class="card-body">
+              <p class="card-text">{{name}} </p>
+            </div>
+          </div>
+        </li>
+        {{/each}}
+      </ul>
+     </center>
+    </div>
+  </div>
+</template>

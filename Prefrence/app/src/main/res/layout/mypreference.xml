@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <CheckBoxPreference
+        android:layout_marginTop="20px"
+        android:key="MyMusic"
+        android:title="Play Music"
+        android:summary="Enable Music"
+
+        />
+    <EditTextPreference
+        android:key ="myMessage"
+        android:title="Greeting Message"
+        android:summary = "Greeting Message"
+        />
+    <ListPreference
+        android:entries="@array/mySongs"
+        android:entryValues ="@array/myValues"
+        android:key="Songs"
+        android:title= "Select Title"
+        android:summary="Title"
+        />
+
+</PreferenceScreen>

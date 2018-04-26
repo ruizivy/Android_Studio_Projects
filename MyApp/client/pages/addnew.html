@@ -1,0 +1,43 @@
+<template name="addStudent">
+
+<label for="txtfullname">Fullname</label>
+<input class="form-control" type="text" name="txtAuthor"
+placeholder="Enter Fullname">
+
+ <div class="form-group">
+    <label for="cmbcourse">Course</label>	
+	<button type="button" role="group" id="btnaddcourse" class="btn btn-round btn-warning  "  data-toggle="modal" data-target="#addcoursemodal">+</button>
+	
+	 <select class="form-control " id="cmbcourse"  placeholder="Choose Course">
+	{{#each items}}
+         <option id={{_id }}> {{Items}} </option>
+    {{/each}} 
+	</select>
+</div>
+
+<label for="txtaddress">Address</label>
+<input class="form-control" type="text" name="txtTitle"
+placeholder="Enter Address">
+<br />
+<button class="btn btn-primary" id="btnSave">Save</button>
+
+
+<div class="modal fade" id="addcoursemodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add Course(s)</h5>
+      </div>
+      <div class="modal-body">
+        
+    <input type="text" class="form-control col" id="txtaddcourse"  placeholder="Enter Course Name">
+	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger " data-dismiss="modal">CLOSE</button>
+        <button type="button" id="btnaddcoursedone" class="btn btn-success">ADD</button>
+      </div>
+    </div>
+  </div>
+</div>
+</template>

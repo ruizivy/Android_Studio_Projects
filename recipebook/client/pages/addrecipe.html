@@ -1,0 +1,96 @@
+<template name="addrecipe">
+
+    <div>
+
+        <div class="col-12 col-md-4 col-xl-3 bd-sidebar container-fluid" id="sidenav" style="height:100%;background: rgba(259, 253, 225, 1)!important;padding:10px z;color: black;font-family: Century Gothic;font-size: 15px;line-height: 2em; font-weight: bold; align-center : true">
+            <br>
+            <br>
+           <img src="images/cupcake.jpg" style="border-style: dashed; border-radius: 10px;width:100% ; height: 100%;">
+           <br>
+           <br>
+           <button id="btnbrowse" class="btn btn-default form-group col-md-4" align = "center" style="background: rgba(205, 202, 202, 1)">
+                   <span class="glyphicon glyphicon-upload" style="margin-right:10px;" align = "center"></span>BROWSE
+                    </button>
+                    <br>
+                    <br>
+                
+        </div>
+        <div class="col-12 col-md-8 col-xl-9" style="height:auto; background: rgba(259, 253, 225, 1)!important;padding:10px z;color: black;font-family: Century Gothic;font-size: 15px;line-height: 2em; font-weight: bold;">
+            <br /><br />
+            <label for="#txtRecipeName">Recipe Name</label>
+            <input type="text" class="form-control control-lg" name="recipename" id="rName" placeholder="Recipe Name">
+            <br>
+            <label for="#txtRecipeName">Choose Category</label>
+           <select class="form-control" role="group" id="cmbgender" placeholder="Choose Gender">
+               {{#each category_name}}
+			                <option>{{name}}</option>
+     		        {{/each}}
+         </select>
+            <br>
+            <label for="#txtDescription">Description</label>
+            <textarea class="form-control control-lg" row="3" name="description" id="description" placeholder="Description"></textarea>
+            <br /> <br />
+            <div class="panel-group" style="color: black;font-family: Century Gothic;font-size: 15px;line-height: 2em; font-weight: bold;">
+                <div class="panel panel-default">
+                    <div class="panel-body" style="font-weight:bold; background: rgba(205, 202, 202, 1)">Ingredients</div>
+                </div>
+                <div class="panel panel-default" style="color:black;">
+                    <div class="panel-body container-fluid">
+                        <ul class="list-group">
+                            <input type="text" class="form-control control-lg" name="ingredients" id="ingredients" placeholder="1.">
+                            <br>
+                            <button id="btnAddIngredients" class="btn btn-warning pull-right">
+                            <span class="glyphicon glyphicon-plus-sign " style="margin-right:10px;" align = "center"></span>
+                            </button>
+                            <button id="btnMinusingredients" class="btn btn-danger pull-right">
+                            <span class="glyphicon glyphicon-minus-sign " style="margin-right:10px;" align = "center"></span>
+                            </button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br /><br />
+            <div class="panel-group" style="color: black;font-family: Century Gothic;font-size: 15px;line-height: 2em; font-weight: bold;">
+                <div class="panel panel-default">
+                    <div class="panel-body" style="font-weight:bold; background: rgba(205, 202, 202, 1)">Procedure</div>
+                </div>
+                <div class="panel panel-default" style="color:black">
+                    <div class="panel-body container-fluid">
+                        <ul class="list-group">
+                            <input type="text" class="form-control control-lg" name="procedure" id="ingredients" placeholder="1.">
+                            <br>
+                            <button id="btnAddprocedure" class="btn btn-warning pull-right">
+                            <span class="glyphicon glyphicon-plus-sign " style="margin-right:10px;" align = "center"></span>
+                            </button>
+                            <button id="btnMinusprocedure" class="btn btn-danger pull-right">
+                            <span class="glyphicon glyphicon-minus-sign " style="margin-right:10px;" align = "center"></span>
+                            </button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <div class="funkyradio">
+                <div class="funkyradio-warning">
+                    <input type="radio" name="radio" id="radio1" />
+                    <label for="radio1">Private Recipe</label>
+                </div>
+                <div class="funkyradio-primary">
+                    <input type="radio" name="radio" id="radio2" checked/>
+                    <label for="radio2">Public Recipe</label>
+                </div>
+            </div>
+            <br>
+            <div class="panel-body container-fluid">
+
+                <button id="btnSaveRecipe" class="btn btn-warning form-group col-md-2">
+                   <span class="glyphicon glyphicon-save" style="margin-right:10px;" align = "center"></span> SAVE
+                    </button>
+                <button id="btnCancel" class="btn btn-secondary form-group col-md-2" style="background: rgba(205, 202, 202, 1)">
+                   <span class="glyphicon glyphicon-remove" style="margin-right:10px;" align = "center"></span> CANCEL
+                    </button>
+            </div>
+        </div>
+        <br> <br>
+    </div>
+</template>

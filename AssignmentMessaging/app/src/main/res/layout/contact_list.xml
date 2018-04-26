@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imgpic"
+        android:layout_marginTop="10px"
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginBottom="10px"
+        android:background="@mipmap/contacts"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10px"
+        android:layout_marginLeft="10px"
+        android:layout_weight="4.58"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblcontactname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Name"
+                android:textColor="#244e41"
+                android:textSize="45px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lblcontactnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:ellipsize="end"
+                android:paddingLeft="10px"
+                android:text="Number"
+                android:textColor="#244e41"
+                android:textSize="25px"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

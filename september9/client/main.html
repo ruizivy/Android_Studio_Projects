@@ -1,0 +1,9 @@
+<head><title>This is the app intially created on September 9, 2017</title></head>
+<template name="main">
+  <h1>This is main</h1>
+  {{#if currentUser}}
+  {{>loggedIn}}
+  {{else}}
+  {{>notLoggedIn}}
+  {{/if}}
+</template>

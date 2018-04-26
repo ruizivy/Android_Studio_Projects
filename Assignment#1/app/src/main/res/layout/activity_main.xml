@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ruiz.assignment1.MainActivity">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <EditText
+           android:id="@+id/txtCountry"
+           android:layout_width="245dp"
+           android:layout_height="wrap_content"
+           android:textSize="20sp"
+           android:hint="Enter a country"
+           android:layout_weight="1"
+           android:layout_gravity="left"
+           android:paddingTop="10sp"
+           />
+
+       <Button
+           android:id="@+id/btnAdd"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="ADD"
+           android:textSize="15dp"
+           android:paddingTop="10sp"
+           android:layout_gravity="right"
+           android:background="@color/colorPrimary"
+           />
+       
+
+   </LinearLayout>
+
+    <Spinner
+        android:id="@+id/cmbCountries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize = "20sp"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        >
+
+    </Spinner>
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "Delete Selected"
+        android:background="@android:color/holo_red_light"
+        android:paddingTop="10sp"
+
+        />
+</LinearLayout>
+

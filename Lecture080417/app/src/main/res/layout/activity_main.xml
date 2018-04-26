@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ruiz.lecture080417.MainActivity">
+
+    <ToggleButton
+        android:id="@+id/btnStart"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textOn="STOP RECORDING"
+        android:textOff="START RECORDING"
+        android:layout_marginLeft="20sp"
+        android:textStyle="bold"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:background="@android:color/darker_gray"
+
+        >
+    </ToggleButton>
+    <ToggleButton
+        android:id="@+id/btnPlayback"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textOn="STOP PLAYBACK"
+        android:textOff="START PLAYBACK "
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:background="@android:color/darker_gray"
+
+        >
+    </ToggleButton>
+
+</LinearLayout>

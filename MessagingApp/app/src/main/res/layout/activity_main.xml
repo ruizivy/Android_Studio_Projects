@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ruiz.messagingapp.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/pnlheader"
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:background="#254ec3"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="20px"
+            android:textColor="#FFFF"
+            android:text="Message"/>
+
+        <Button
+            android:id="@+id/btnaddnew"
+            android:layout_width="70px"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="420px"
+            android:layout_height="70px"
+            android:layout_marginRight="80px"
+            android:background="@mipmap/addnew"
+            />
+
+    </LinearLayout>
+    <ListView
+        android:id="@+id/lsttitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pnlheader"
+        />
+</RelativeLayout>

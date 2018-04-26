@@ -1,0 +1,1 @@
+{"head":"","body":"","js":"\nTemplate.__checkName(\"showStudents\");\nTemplate[\"showStudents\"] = new Template(\"Template.showStudents\", (function() {\n  var view = this;\n  return Blaze.Each(function() {\n    return Spacebars.call(view.lookup(\"listStudent\"));\n  }, function() {\n    return \"\\n\\n\\t \";\n  });\n}));\n","bodyAttrs":{}}

@@ -1,0 +1,28 @@
+<template name ="showStudents">
+	 
+
+	  <div class="panel panel-info">
+    <div class="panel-heading">
+      <h4>Student List </h4>
+    </div>
+    <div class="panel-body">
+  <div class="container-fluid">
+  <ul class="list-group">
+    {{#each liststudent}}
+      <li class="list-group-item clearfix" id={{_id}} value={{fullname}}> {{_id}} <br /> {{fullname}} <br />  {{course}}  <br /> {{address}}
+      <button id="btnPortal" class="btn btn-success pull-right">Show Portal</button>
+	 
+      </li>
+    {{/each}}
+  </ul>
+</div>
+<button class="btn btn-primary pull-right" id="btnAdd">ADD NEW</button>
+</div>
+	  </div>
+  </template>
+<template name = 'loggedIn'>
+  <h1> I am logged in</h1>
+</template>
+<template name = "notLoggedIn">
+  <h1>Not Logged In</h1>
+ </template>s

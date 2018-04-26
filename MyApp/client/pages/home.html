@@ -1,0 +1,16 @@
+<template name  = 'home'>
+
+<p> this is home</p>
+
+	{{#if currentUser}}
+
+		{{> loggedIn}}
+
+	{{else}}
+
+		{{> notLoggedIn}}
+
+	{{/if}}
+
+
+</template>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ruiz.assignmentmessaging.SecondActivity">
+    <LinearLayout
+        android:id="@+id/pnlheader1"
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="#254ec3"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnback1"
+            android:layout_width="80px"
+            android:layout_height="80px"
+           android:background="@mipmap/blue"
+            android:layout_marginLeft="10px"
+            android:ellipsize="end"
+            />
+        <TextView
+            android:id="@+id/txt_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35px"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:layout_marginLeft="20sp"
+            android:textColor="#FFFF"
+            android:text="Number"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_below="@+id/pnlheader1"
+        android:id="@+id/lstfrom"
+        android:layout_width="fill_parent"
+        android:stackFromBottom="true"
+        android:layout_height="950px"
+        android:layout_above="@+id/pnlfooter"
+        />
+
+    <LinearLayout
+        android:id="@+id/pnlfooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+        <EditText
+            android:id="@+id/txt_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25px"
+            android:background="@android:drawable/alert_light_frame"
+            android:layout_marginLeft="5px"
+            android:ellipsize="end"
+            android:layout_weight="90"
+            android:lines="2"
+            android:hint="Write Message"
+            android:textStyle="italic"
+            />
+        <Button
+            android:id="@+id/btnsend"
+            android:layout_width="90px"
+            android:layout_weight="10"
+            android:layout_height="90px"
+            android:layout_gravity="center"
+            android:layout_marginTop="5px"
+            android:background="@mipmap/send"
+            android:layout_marginBottom="5px"
+            android:layout_marginRight="10px"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

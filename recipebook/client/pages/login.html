@@ -1,0 +1,30 @@
+<template name="login">
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6 jumbotron" style="text-align:center; font-family:  Century Gothic; font-weight: bold;font-size: 20px ;height:auto; background: rgba(259, 253, 225, 0.9)!important;padding:10px z">
+                <form id="frmLogin" class="form-horizontal form-group" role="form" action="" method="post">
+                    <div class="panel-body">
+                        <fieldset>
+
+                            <!--<label style="text-align: center;">LOGIN</label>-->
+                                <img class="card-img-top" src="images/signin.png" alt="Card image cap" style="align-self: center; width:50% ; height:auto;border-radius:100px">         
+                            <br />
+                            <br>
+                            <label for="#username">User Name</label>
+                            <input type="text" class="form-control control-lg" name="username" id="uName" placeholder="Username">
+                            <br>
+                            <label for="#password">Password</label>
+                            <input type="password" class="form-control control-lg" name="password" id="pword" placeholder="Password">
+                            <br />
+                            <button type="submit" class="btn btn-primary pull-right">Sign In </button>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+    </div>
+</template>

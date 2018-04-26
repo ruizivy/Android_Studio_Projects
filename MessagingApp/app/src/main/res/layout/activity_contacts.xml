@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ruiz.messagingapp.ContactsActivity">
+
+
+    <LinearLayout
+        android:id="@+id/pnlheader1"
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:background="#254ec3"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20sp"
+            android:textColor="#FFFF"
+            android:text="Contact List"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_below="@+id/pnlheader1"
+        android:id="@+id/lstcontacts"
+        android:layout_width="fill_parent"
+        android:layout_height="950px"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtStreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:text="Street" />
+
+    <TextView
+        android:id="@+id/txtRoute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Route"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/txtNeighbor"
+        android:layout_alignEnd="@+id/txtNeighbor"
+        android:layout_marginRight="79dp"
+        android:layout_marginEnd="79dp" />
+
+    <TextView
+        android:id="@+id/txtNeighbor"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtStreet"
+        android:layout_alignStart="@+id/txtStreet"
+        android:layout_below="@+id/txtStreet"
+        android:layout_marginTop="11dp"
+        android:text="Neighbor" />
+
+    <TextView
+        android:id="@+id/txtLocality"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtNeighbor"
+        android:layout_alignStart="@+id/txtNeighbor"
+        android:layout_below="@+id/txtNeighbor"
+        android:layout_marginTop="14dp"
+        android:text="Locality" />
+
+    <TextView
+        android:id="@+id/txtCountry"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Country"
+        android:layout_alignBaseline="@+id/txtLocality"
+        android:layout_alignBottom="@+id/txtLocality"
+        android:layout_alignLeft="@+id/txtRoute"
+        android:layout_alignStart="@+id/txtRoute" />
+
+    <TextView
+        android:id="@+id/txtPostal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtLocality"
+        android:layout_alignStart="@+id/txtLocality"
+        android:layout_below="@+id/txtLocality"
+        android:layout_marginTop="24dp"
+        android:text="Postal Code" />
+
+</RelativeLayout>

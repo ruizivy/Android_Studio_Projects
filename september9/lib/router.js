@@ -1,0 +1,16 @@
+Router.configure({
+	layoutTemplate:'layout'
+});
+Router.route('/',{
+	name:'main'
+});
+Router.route('/home',{
+	name:'Home'
+});
+Router.route('/show_students',{
+	name:'showStudents'
+});
+Router.route('/add_student',{
+	name:'addStudent',
+	template:'addStudent'
+});
